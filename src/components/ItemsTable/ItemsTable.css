@@ -6,7 +6,7 @@
 }
 
 .ItemsTableWrapper {
-    max-width: 525px;
+    width: 525px;
     height: 575px;
     overflow-y: auto;
     border: 1px solid;
