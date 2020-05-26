@@ -9,7 +9,9 @@ export default function ItemsTable({ items }) {
   return (
     <div className={"ItemsTableWrapper"}>
       <table className={b()}>
-        <col width="100" />
+        <colgroup>
+          <col width="100" />
+        </colgroup>
         <thead>
           <tr>
             <th className={b("Cell", { type: "header" })}>Артикул</th>

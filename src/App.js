@@ -16,18 +16,26 @@ function App() {
         <Container
           renderComponent={(items) => <ItemsTable items={data} />}
           buttons={[
-            <Button onClick={() => {}} icon="arrow-down" />,
-            <Button onClick={() => {}} icon="arrow-up" />,
-            <Button onClick={() => {}}>Добавить</Button>,
+            <Button key="btn-1" onClick={() => {}} icon="arrow-down" />,
+            <Button key="btn-2" onClick={() => {}} icon="arrow-up" />,
+            <Button key="btn-3" onClick={() => {}}>
+              Добавить
+            </Button>,
           ]}
         />
 
         <Container
           renderComponent={() => <ItemsList addedItems={[]} />}
           buttons={[
-            <Button onClick={() => {}}>Выбрать все</Button>,
-            <Button onClick={() => {}}>Выбрать ничего</Button>,
-            <Button onClick={() => {}}>Удалить выделен.</Button>,
+            <Button key="btn-4" onClick={() => {}}>
+              Выбрать все
+            </Button>,
+            <Button key="btn-5" onClick={() => {}}>
+              Выбрать ничего
+            </Button>,
+            <Button key="btn-6" onClick={() => {}}>
+              Удалить выделен.
+            </Button>,
           ]}
         />
       </div>

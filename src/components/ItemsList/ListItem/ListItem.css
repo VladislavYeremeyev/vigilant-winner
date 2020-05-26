@@ -1,0 +1,51 @@
+.ListItem {
+    display: flex;
+    text-align: left;
+    background-color: var(--light-gray);
+    height: 187px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.ListItem:not(:last-of-type) {
+    margin-bottom: 4px;
+}
+
+.ListItem-VendorCode {
+    margin-bottom: 8px;
+}
+
+.ListItem-Name {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 8px;
+}
+
+.ListItem-Info {
+    max-width: 400px;
+}
+
+.ListItem-Description {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ListItem-Action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    width: 80px;
+}
+
+.ListItem-Checkbox {
+    transform: scale(3);
+}
