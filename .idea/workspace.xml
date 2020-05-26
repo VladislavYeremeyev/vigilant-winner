@@ -21,17 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="be576a34-87d1-4944-b722-a7f4c11fd3d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/Button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Container/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Container/Container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsList/ItemsList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsList/ItemsList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsTable/ItemsTable.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTable/ItemsTable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsTable/ItemsTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTable/ItemsTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemsList/ItemsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsList/ItemsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemsList/ListItem/ListItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsList/ListItem/ListItem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,13 +47,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Button" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/actions" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Владислав\AppData\Roaming\npm\node_modules\prettier" />
     <property name="run.prettier.on.save" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\x5\src\actions" />
       <recent name="D:\x5\src\components\Button" />
       <recent name="D:\x5\src" />
     </key>
@@ -74,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590427355418</updated>
-      <workItem from="1590427357095" duration="31156000" />
+      <workItem from="1590427357095" duration="35806000" />
     </task>
     <servers />
   </component>
@@ -105,6 +100,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="446" y="115" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1590436581323" />
+    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1590506612642">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1590506612642" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1590481470176">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

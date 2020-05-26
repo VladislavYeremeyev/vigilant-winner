@@ -48,4 +48,5 @@
 
 .ListItem-Checkbox {
     transform: scale(3);
+    cursor: pointer;
 }

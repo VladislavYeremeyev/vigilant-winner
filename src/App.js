@@ -15,7 +15,14 @@ function App({
   handleUpperClick,
   handleLowerClick,
   handleAddToListClick,
+  handleCheckListItem,
+  handleSelectAllClick,
+  handleUnselectAllClick,
+  handleDeleteSelectedClick,
 }) {
+  const isSomeUnchecked = listItems.some((el) => !el.checked);
+  const isSomeChecked = listItems.some((el) => el.checked);
+
   return (
     <div className={b()}>
       <div className={b("Content")}>
@@ -49,18 +56,30 @@ function App({
 
         <Container
           buttons={[
-            <Button key="btn-4" onClick={() => {}}>
+            <Button
+              disabled={!listItems.length || !isSomeUnchecked}
+              key="btn-4"
+              onClick={handleSelectAllClick}
+            >
               Выбрать все
             </Button>,
-            <Button key="btn-5" onClick={() => {}}>
+            <Button
+              disabled={!listItems.length || !isSomeChecked}
+              key="btn-5"
+              onClick={handleUnselectAllClick}
+            >
               Выбрать ничего
             </Button>,
-            <Button key="btn-6" onClick={() => {}}>
+            <Button
+              disabled={!listItems.length || !isSomeChecked}
+              key="btn-6"
+              onClick={handleDeleteSelectedClick}
+            >
               Удалить выделен.
             </Button>,
           ]}
         >
-          <ItemsList addedItems={listItems} />
+          <ItemsList addedItems={listItems} handleCheck={handleCheckListItem} />
         </Container>
       </div>
     </div>
