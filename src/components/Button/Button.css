@@ -1,0 +1,24 @@
+.Button {
+    border-radius: 5px;
+    min-width: 150px;
+    height: 35px;
+    background-color: var(--light-gray);
+    border: 1px solid black;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Button:hover {
+    cursor: pointer;
+    background-color: var(--gray);
+}
+
+.Button_icon_arrow-up {
+    background-image: url("./arrow.svg");
+}
+
+.Button_icon_arrow-down {
+    background-image: url("./arrow.svg");
+    transform: rotate(180deg);
+}
+
