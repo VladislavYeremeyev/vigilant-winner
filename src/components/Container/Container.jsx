@@ -4,10 +4,10 @@ import { cn } from "@bem-react/classname";
 
 const b = cn("Container");
 
-export default function Container({ renderComponent, buttons }) {
+export default function Container({ buttons, children }) {
   return (
     <div className={b()}>
-      {renderComponent()}
+      {children}
       <div className={b("ActionButtons")}>
         {buttons.map((button) => button)}
       </div>

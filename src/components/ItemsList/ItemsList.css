@@ -1,8 +1,7 @@
 .ItemsList {
     width: 525px;
-    max-height: 575px;
+    height: 575px;
     overflow-y: auto;
-    height: 100%;
     box-sizing: border-box;
     border: 1px solid black;
     margin: 0;

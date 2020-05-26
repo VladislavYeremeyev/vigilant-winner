@@ -8,9 +8,13 @@
     background-repeat: no-repeat;
 }
 
-.Button:hover {
+.Button:not([disabled]):hover {
     cursor: pointer;
     background-color: var(--gray);
+}
+
+.Button[disabled] {
+    opacity: 0.3;
 }
 
 .Button_icon_arrow-up {

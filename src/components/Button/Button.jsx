@@ -6,7 +6,11 @@ const b = cn("Button");
 
 export default function Button({ disabled, onClick, icon, children }) {
   return (
-    <button onClick={onClick} className={b(icon ? { icon } : {})}>
+    <button
+      disabled={disabled}
+      onClick={onClick}
+      className={b(icon ? { icon } : {})}
+    >
       {children}
     </button>
   );
