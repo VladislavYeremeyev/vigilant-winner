@@ -23,6 +23,7 @@ export default function ItemsTable({ items, selectedRow }) {
             <tr
               key={item.id}
               className={b("Row", { selected: index === selectedRow })}
+              {...(index === selectedRow ? { id: "selected" } : {})}
             >
               <td className={b("Cell")}>{item.artNo}</td>
               <td title={item.name} className={b("Cell")}>

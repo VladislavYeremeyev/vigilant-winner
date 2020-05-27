@@ -19,8 +19,14 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  handleUpperClick: () => dispatch(selectUpper()),
-  handleLowerClick: () => dispatch(selectLower()),
+  handleUpperClick: (cb) => {
+    dispatch(selectUpper());
+    cb();
+  },
+  handleLowerClick: (cb) => {
+    dispatch(selectLower());
+    cb();
+  },
   handleAddToListClick: (item) => dispatch(addItemToList(item)),
   handleSelectAllClick: () => dispatch(selectAllInList()),
   handleUnselectAllClick: () => dispatch(unselectAllInList()),

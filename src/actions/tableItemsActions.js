@@ -8,12 +8,12 @@ export const ADD_ITEM_TO_LIST = "ADD_ITEM_TO_LIST";
 /*
  * Action creators
  */
-export function selectLower(id) {
-  return { type: SELECT_LOWER, payload: id };
+export function selectLower() {
+  return { type: SELECT_LOWER };
 }
 
-export function selectUpper(id) {
-  return { type: SELECT_UPPER, payload: id };
+export function selectUpper() {
+  return { type: SELECT_UPPER };
 }
 
 export function addItemToList(item) {

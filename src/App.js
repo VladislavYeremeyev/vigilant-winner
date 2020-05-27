@@ -8,6 +8,16 @@ import { cn } from "@bem-react/classname";
 
 const b = cn("App");
 
+const scrollToSelectedRow = () => {
+  const node = document.getElementById("selected");
+  if (node) {
+    node.scrollIntoView({
+      block: "center",
+      behavior: "smooth",
+    });
+  }
+};
+
 function App({
   tableItems,
   listItems,
@@ -33,13 +43,13 @@ function App({
                 !tableItems.length || selectedRow === tableItems.length - 1
               }
               key="btn-1"
-              onClick={handleLowerClick}
+              onClick={() => handleLowerClick(scrollToSelectedRow)}
               icon="arrow-down"
             />,
             <Button
               disabled={!tableItems.length || selectedRow === 0}
               key="btn-2"
-              onClick={handleUpperClick}
+              onClick={() => handleUpperClick(scrollToSelectedRow)}
               icon="arrow-up"
             />,
             <Button
