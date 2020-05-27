@@ -17,7 +17,12 @@
     height: 25px;
 }
 
-.ItemsTable-Row:nth-child(even):not(.ItemsTable-Row_selected) {
+.ItemsTable-Row:hover:not(.ItemsTable-Row_selected) {
+    background-color: var(--gray);
+    cursor: pointer;
+}
+
+.ItemsTable-Row:nth-child(even):not(.ItemsTable-Row_selected):not(:hover) {
     background-color: var(--light-gray);
 }
 

@@ -5,7 +5,11 @@ import { cn } from "@bem-react/classname";
 
 const b = cn("ItemsTable");
 
-export default function ItemsTable({ items, selectedRow }) {
+export default function ItemsTable({
+  items,
+  selectedRow,
+  handleTableRowClick,
+}) {
   return (
     <div className={"ItemsTableWrapper"}>
       <table className={b()}>
@@ -24,6 +28,9 @@ export default function ItemsTable({ items, selectedRow }) {
               key={item.id}
               className={b("Row", { selected: index === selectedRow })}
               {...(index === selectedRow ? { id: "selected" } : {})}
+              onClick={() => {
+                handleTableRowClick(index);
+              }}
             >
               <td className={b("Cell")}>{item.artNo}</td>
               <td title={item.name} className={b("Cell")}>

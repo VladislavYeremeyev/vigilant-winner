@@ -29,6 +29,7 @@ function App({
   handleSelectAllClick,
   handleUnselectAllClick,
   handleDeleteSelectedClick,
+  handleTableRowClick,
 }) {
   const isSomeUnchecked = listItems.some((el) => !el.checked);
   const isSomeChecked = listItems.some((el) => el.checked);
@@ -61,7 +62,11 @@ function App({
             </Button>,
           ]}
         >
-          <ItemsTable items={tableItems} selectedRow={selectedRow} />
+          <ItemsTable
+            items={tableItems}
+            selectedRow={selectedRow}
+            handleTableRowClick={handleTableRowClick}
+          />
         </Container>
 
         <Container

@@ -4,6 +4,7 @@ import {
   selectLower,
   selectUpper,
   addItemToList,
+  selectRowByClick,
 } from "../actions/tableItemsActions";
 import {
   selectAllInList,
@@ -27,6 +28,7 @@ const mapDispatchToProps = (dispatch) => ({
     dispatch(selectLower());
     cb();
   },
+  handleTableRowClick: (index) => dispatch(selectRowByClick(index)),
   handleAddToListClick: (item) => dispatch(addItemToList(item)),
   handleSelectAllClick: () => dispatch(selectAllInList()),
   handleUnselectAllClick: () => dispatch(unselectAllInList()),

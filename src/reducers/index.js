@@ -1,6 +1,7 @@
 import {
   SELECT_UPPER,
   SELECT_LOWER,
+  SELECT_ROW_BY_CLICK,
   ADD_ITEM_TO_LIST,
 } from "../actions/tableItemsActions";
 import {
@@ -22,6 +23,8 @@ const rootReducer = (
       return { ...state, selectedRow: selectedRow - 1 };
     case SELECT_LOWER:
       return { ...state, selectedRow: selectedRow + 1 };
+    case SELECT_ROW_BY_CLICK:
+      return { ...state, selectedRow: action.payload };
     case ADD_ITEM_TO_LIST:
       return {
         ...state,
